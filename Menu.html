@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Menu_CAFE</title>
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" href="css/menu2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <img src="imgs/logo1.jpeg" class="logo">
+
+                <ul class="main-nav animated slideInDown" id="check-class">
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="Menu.html">MENU</a></li>
+                    <li><a href="Contact.html">CONTACT US</a></li>
+                </ul>
+                <a href="#" class="mobile-icon" onclick="slideshow()"> <i class="fa fa-bars"></i></a>
+            </div>
+        </nav>
+        <br>
+
+        <div class="main-content-header">
+
+            <div class="row" style="text-align: center; margin-bottom: 5%;">
+                <div class="col">
+                    <button style="margin-right: 5px; width:25%;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Your Orders (<span class="total-count"></span>)</button>
+                    <button style="margin-right: 5px; width:25%;" class="clear-cart btn btn-danger">Clear Orders </button></div>
+            </div>
+
+            <form class="example" action="action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <br>
+
+
+            <!-- Menu -->
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <div id="menu" class="w3-container w3-black w3-xxlarge w3-padding-64">
+                <h1 class="w3-center w3-jumbo w3-padding-32">THE MENU</h1>
+                <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                    <a href="#VEGETARIAN">
+                        <div class="w3-third w3-padding-large w3-red">Vegetarian</div>
+                    </a>
+                    <a href="#NON-VEGETARIAN">
+                        <div class="w3-third w3-padding-large w3-hover-red">Non-Vegetarian</div>
+                    </a>
+                    <a href="#BREAKFAST">
+                        <div class="w3-third w3-padding-large w3-hover-red">Breakfast</div>
+                    </a>
+
+                </div>
+
+                <h1 id="VEGETARIAN" class="w3-center w3-jumbo w3-padding-32">VEGETARIAN</h1>
+                <div class="w3-container w3-white w3-padding-32">
+                    <img src="https://nishkitchen.com/wp-content/uploads/2018/07/Vegetable-Fried-Rice-1B.jpg" alt="Veg Biryani" width=220px height=250px>
+                    <h1 style="text-align:left;"><b>Veg Fried Rice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 40</span></h1>
+                    </span>
+                    <p style="font-family: body; color: #bf55ec;">Rs. 40</p>
+                    <a style="font-family: body; text-decoration: none;" href="#" data-name="Veg Fried Rice" data-price="40" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+
+                </div>
+
+
+                <h1 style="text-align:left;"><b>Paneer Fried Rice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 40</span></h1>
+                <p style="font-family: body; color: #bf55ec;">Rs. 40</p>
+                <a style="font-family: body; text-decoration: none;" href="#" data-name="Paneer Fried Rice" data-price="40" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+
+
+                <h1 style="text-align:left;">Manchuria<span class="w3-tag w3-red w3-round">Hot!</span>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 40</span></h1>
+                <p style="font-family: body; color: #bf55ec;">Rs. 40</p>
+                <a style="font-family: body; text-decoration: none;" href="#" data-name="Manchuria" data-price="40" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+                <hr>
+            </div>
+
+            <h1 id="NON-VEGETARIAN" class="w3-center w3-jumbo w3-padding-32">NON-VEGETARIAN</h1>
+            <div class="w3-container w3-white w3-padding-32">
+                <img src="https://i.pinimg.com/originals/95/5c/2d/955c2dadf8f8b76efbf683e16f40d024.jpg" alt="Non-Vegetarian" width=220px height=250px>
+                <h1 style="text-align:left;">Chicken Biryani<span class="w3-tag w3-grey w3-round">(Popular)</span>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 50</span></h1>
+                <p style="font-family: body; color: #bf55ec;">RS 50</p>
+                <a style="font-family: body; text-decoration: none;" href="#" data-name="Chicken Biryani" data-price="50" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+
+
+                <h1 style="text-align:left;"><b>Chicken 65</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 50</span></h1>
+                <p style="font-family: body; color: #bf55ec;">Rs. 50</p>
+                <a style="font-family: body; text-decoration: none;" href="#" data-name="Chicken 65" data-price="50" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+
+                <h1 style="text-align:left;"><b>Egg Fried Rice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 50</span></h1>
+                <p style="font-family: body; color: #bf55ec;">Rs. 50</p>
+                <a style="font-family: body; text-decoration: none;" href="#" data-name="Egg Fried Rice" data-price="50" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+                <br>
+            </div>
+            <hr>
+
+            <h1 id="BREAKFAST" class="w3-center w3-jumbo w3-padding-32">BREAKFAST</h1>
+            <div class="w3-container w3-white w3-padding-32">
+                <img src="https://www.archanaskitchen.com/images/archanaskitchen/0-Affiliate-Articles/RESTAURANT_STYLE_SOUTH_INDIAN_THALI_original.jpg" alt="Breakfast" width=220px height=250px>
+
+                <h1 style="text-align:left;"><b>Puri</b> <span class="w3-tag w3-grey w3-round">& Chole</span>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 30</span></h1>
+                <p style="font-family: body; color: #bf55ec;">Rs. 30</p>
+                <a style="font-family: body; text-decoration: none;" href="#" data-name="Puri" data-price="30" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+
+
+
+                <h1 style="text-align:left;"><b>Sandwich</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 20</span></h1>
+                <p style="font-family: body; color: #bf55ec;">Rs. 20</p>
+                <a style="font-family: body; text-decoration: none;" href="#" data-name="Sandwich" data-price="20" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+
+
+                <h1 style="text-align:left;"><b>Medhu Vada</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs. 20</span></h1>
+                <p style="font-family: body; color: #bf55ec;">Rs. 20</p>
+                <a style="font-family: body; text-decoration: none;" href="#" data-name="Medhu Vada" data-price="20" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+                <hr>
+            </div>
+        </div>
+
+
+
+
+
+    </header>
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="color: black; font-size: 200%;">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <table style="color: black; font-family: body; font-style: bold;" class="show-cart table">
+
+                    </table>
+                    <div style="color: black; font-family: body; font-style: bold;">Total price: Rs <span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button href="Checkout.html" type="button" class="btn btn-primary"> Checkout </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        function slideshow() {
+            var x = document.getElementById('check-class');
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function openPage(pageName, elmnt, color) {
+
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+
+            document.getElementById(pageName).style.display = "block";
+
+            elmnt.style.backgroundColor = color;
+        }
+
+        document.getElementById("defaultOpen").click();
+
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+
+
+        var elements = document.getElementsByClassName("column");
+
+        // Declare a loop variable
+        var i;
+
+        // List View
+        function listView() {
+            for (i = 0; i < elements.length; i++) {
+                elements[i].style.width = "100%";
+            }
+        }
+
+        //Grid View
+        function gridView() {
+            for (i = 0; i < elements.length; i++) {
+                elements[i].style.width = "50%";
+            }
+        }
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="css/script.js"></script>
+    <script>
+        function myFunction() {
+            alert("Item added in your order");
+        }
+    </script>
+</body>
+
+</html>
