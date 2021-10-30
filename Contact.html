@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact_CBIT</title>
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <img src="imgs/logo1.jpeg" class="logo">
+
+                <ul class="main-nav animated slideInDown" id="check-class">
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="Menu.html">MENU</a></li>
+
+                    <li><a href="Contact.html">CONTACT US</a></li>
+                </ul>
+                <a href="#" class="mobile-icon" onclick="slideshow()"> <i class="fa fa-bars"></i></a>
+            </div>
+        </nav>
+        <div class="main-content-header">
+            <div class="container">
+                <div style="text-align:center">
+                    <h2>Contact Us</h2>
+                    <br>
+                    <p>Dont forget to leave your feedback</p>
+                    <br>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <h1> WE OFFER. </h1>
+                        <br>
+                        <p> CBIT CANTEN offers a great selection of vegetarian food and drinks.
+
+
+                            <br> <img src="imgs/veg roll1.png" style="width:50%">
+
+                            <p> Call us at
+                                <p style="font-family: body;color: #bf55ec">
+                                    011-24655641/42</p>
+                                <p>Email:-information@CBIT.co.in</p>
+                    </div>
+                    <div class="column">
+                        <form action="/action_page.php">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                            <label for="Year">Year</label>
+                            <select id="Year" name="Year">
+          <option value="1st">1st</option>
+          <option value="2nd">2nd</option>
+          <option value="3rd">3rd</option>
+          <option value="4th">4th</option>
+          
+        </select>
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                            <input type="submit" value="Submit" />
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </header>
+
+    <script type="text/javascript">
+        function slideshow() {
+            var x = document.getElementById('check-class');
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+
+</body>
+
+</html>
